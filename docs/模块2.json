@@ -1,0 +1,36 @@
+[
+  {
+    "name": "接口3",
+    "description": "接口3的描述",
+    "request": {
+      "path": "/example/api3",
+      "method": "GET",
+      "query": [
+        {
+          "key": "请求参数1",
+          "type": "String",
+          "required": true,
+          "description": "请求参数1的说明"
+        },
+        {
+          "key": "请求参数2",
+          "type": "String",
+          "required": true,
+          "description": "请求参数2的说明"
+        }
+      ]
+    },
+    "response": [
+      {
+        "key": "响应参数1",
+        "type": "Number",
+        "description": "响应参数1的说明"
+      },
+      {
+        "key": "响应参数2",
+        "type": "String",
+        "description": "响应参数2的说明"
+      }
+    ]
+  }
+]

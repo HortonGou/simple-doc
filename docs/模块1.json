@@ -1,0 +1,46 @@
+[
+  {
+    "name": "接口1",
+    "description": "接口1的描述",
+    "request": {
+      "path": "/example/api1",
+      "method": "POST",
+      "body": [
+        {
+          "key": "请求参数1",
+          "type": "String",
+          "required": true,
+          "description": "请求参数1的说明"
+        },
+        {
+          "key": "请求参数2",
+          "type": "String",
+          "required": true,
+          "description": "请求参数2的说明"
+        }
+      ]
+    },
+    "response": [
+      {
+        "key": "响应参数1",
+        "type": "Number",
+        "description": "响应参数1的说明"
+      },
+      {
+        "key": "响应参数2",
+        "type": "String",
+        "description": "响应参数2的说明"
+      }
+    ]
+  },
+  {
+    "name": "接口2",
+    "description": "接口2的描述",
+    "request": {
+      "path": "/example/api2",
+      "method": "POST",
+      "body": []
+    },
+    "response": []
+  }
+]
