@@ -17,7 +17,7 @@ clone项目地址到本地，进入server目录，启动服务
 默认占用3000和3001端口
 
 ~~~
-git clone https://github.com/RichardLitt/standard-readme.git
+git clone https://github.com/HortonGou/simple-doc.git
 cd server
 npm install
 npm start
@@ -68,7 +68,7 @@ doc目录下为文档的参数
 
 ###查看文档
 
-使用浏览器打开http://localhost:3000,即可查看API文档
+使用浏览器打开http://localhost:3000 ,即可查看API文档
 
 #自定义文档样式
 
