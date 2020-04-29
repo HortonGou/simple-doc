@@ -30,7 +30,7 @@ const user = {
         }
     },
     actions: {
-        getFolderList({commit}, params) {
+        getFolderList({commit}) {
             return new Promise(function (resolve, reject) {
                 api.folder.getList().then(list => {
                     list.map(item => {
@@ -43,7 +43,7 @@ const user = {
                 })
             })
         },
-        getFolderApiList({commit}, params) {
+        getFolderApiList({commit},params) {
             return new Promise(function (resolve, reject) {
                 api.folder.getApis(params.folderName).then(apiList => {
                     commit('updateApiList', {
@@ -56,7 +56,7 @@ const user = {
                 })
             })
         },
-        refresh({commit, state, getters}) {
+        refresh({commit, state}) {
             return new Promise(function (resolve, reject) {
                 const promises = state.folderList.filter(value => {
                     return value.apis != null && value.apis.length > 0

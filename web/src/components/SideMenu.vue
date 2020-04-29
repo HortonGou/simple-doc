@@ -6,11 +6,11 @@
              background-color="#333333"
              text-color="#fff"
              active-text-color="#ffd04b">
-        <el-submenu v-for="item in folderList" :index="item.name">
+        <el-submenu v-for="item in folderList" :index="item.name" :key="item.name">
             <template slot="title">
                 {{item.name}}
             </template>
-            <el-menu-item v-for="api in item.apis" :index="api.name">{{api.name}}</el-menu-item>
+            <el-menu-item v-for="api in item.apis" :index="api.name" :key="api.name">{{api.name}}</el-menu-item>
         </el-submenu>
     </el-menu>
 </template>
@@ -42,7 +42,7 @@
                 });
                 window.location.href = '#' + key
             },
-            handleOpen(index, indexPath) {
+            handleOpen(index) {
                 if (this.getApiList(index).length === 0) {
                     this.getFolderApiList({folderName: index});
                 }
